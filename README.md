@@ -24,3 +24,15 @@
    ![image](https://github.com/user-attachments/assets/8aff052b-7ace-4c95-8d06-5317adf6732a)
 
 More info here: Using Quarkus with Maven https://quarkus.io/guides/maven-tooling
+
+4. Install dependencies:
+   - hibernate-validator
+   - jdbc-h2
+   - hibernate-orm
+   - hibernate-orm-panache
+   - resteasy-jsonb
+
+   with the following command on CMD:
+   ```shell
+   ./mvnw quarkus:add-extension -Dextensions="hibernate-validator,jdbc-h2,hibernate-orm,hibernate-orm-panache,resteasy-jsonb"
+   ```
