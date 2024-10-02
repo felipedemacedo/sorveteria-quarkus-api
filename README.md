@@ -20,12 +20,12 @@
    ```shell
    ./mvnw compile quarkus:dev
    ```
-3. The result should be something like this:
+   The result should be something like this:
    ![image](https://github.com/user-attachments/assets/8aff052b-7ace-4c95-8d06-5317adf6732a)
 
 More info here: Using Quarkus with Maven https://quarkus.io/guides/maven-tooling
 
-4. Install dependencies:
+3. Install dependencies:
    - hibernate-validator
    - jdbc-h2
    - hibernate-orm
