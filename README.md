@@ -4,7 +4,8 @@
 
 1. Download and install Java JDK https://www.oracle.com/br/java/technologies/downloads/
 2. Download and install Maven https://maven.apache.org/download.cgi
-3. (optional) Download and install IntelliJ Community (free) https://www.jetbrains.com/pt-br/idea/download/other.html
+3. Download and install PostgreSQL https://www.postgresql.org/download
+4. (optional) Download and install IntelliJ Community (free) https://www.jetbrains.com/pt-br/idea/download/other.html
 
 # Step by step for the creation of this repo
 
