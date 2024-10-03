@@ -37,3 +37,13 @@ More info here: Using Quarkus with Maven https://quarkus.io/guides/maven-tooling
    ```shell
    ./mvnw quarkus:add-extension -Dextensions="hibernate-validator,jdbc-h2,hibernate-orm,hibernate-orm-panache,resteasy-jsonb"
    ```
+
+4. Install Prometheus for metrics
+   (pom.xml)
+   ```xml 
+   <dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-smallrye-metrics</artifactId>
+   </dependency>
+   ```
+   * Metrics will be available on /q/metrics
