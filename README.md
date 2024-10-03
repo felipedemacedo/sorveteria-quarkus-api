@@ -101,7 +101,17 @@ If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifact
    
    <img width="637" alt="image" src="https://github.com/user-attachments/assets/2bdc8552-4a94-4967-9475-d57ba662fc36">
 
-   
+## 7. (optional) Install and use Grafana
+   ### 7.1. Download it from https://grafana.com/
+   ### 7.2. Run Grafana Server
+
+   ![image](https://github.com/user-attachments/assets/1dc3c514-dd61-4ad3-b97e-4cf0a6299caa)
+
+   ### 7.3. Configure it for reading Prometheus as data source
+
+   ![image](https://github.com/user-attachments/assets/5147a119-3bd2-4da4-9127-2eab1084278b)
+
+
 
 
    
