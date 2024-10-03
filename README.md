@@ -62,7 +62,6 @@
    </dependency>
    ```
    
-   Metrics will be available on /q/metrics
      ![image](https://github.com/user-attachments/assets/e419cd50-094d-4748-8bb7-1493ee08dd3f)
      
 6. Run the following command on windows CMD
