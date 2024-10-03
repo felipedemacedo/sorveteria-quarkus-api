@@ -9,20 +9,23 @@
 
 # Step by step for the creation of this repo
 
-1. Run the following command on windows CMD
+## 1. Run the following command on windows CMD
    
    ```shell
    mvn io.quarkus.platform:quarkus-maven-plugin:3.15.1:create -DprojectGroupId=io.github.felipedemacedo -DprojectArtifactId=sorveteria-quarkus-api
    ```
-   
-    * If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifactId=my-artifactId"
+
+If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifactId=my-artifactId"
       
-3. Install dependencies
-   - hibernate-validator
-   - jdbc-h2
-   - hibernate-orm
-   - hibernate-orm-panache
-   - resteasy-jsonb
+## 2. Install dependencies
+
+   ```
+      - hibernate-validator
+      - jdbc-h2
+      - hibernate-orm
+      - hibernate-orm-panache
+      - resteasy-jsonb
+   ```
 
    with the following command on CMD:
    ```shell
@@ -53,7 +56,7 @@
    </dependency>
    ```
    
-4. Install Prometheus for metrics adding these lines into pom.xml:
+## 3. Install Prometheus for metrics adding these lines into pom.xml:
    
    ```xml 
    <dependency>
@@ -62,9 +65,9 @@
    </dependency>
    ```
    
-     ![image](https://github.com/user-attachments/assets/e419cd50-094d-4748-8bb7-1493ee08dd3f)
+   ![image](https://github.com/user-attachments/assets/e419cd50-094d-4748-8bb7-1493ee08dd3f)
      
-6. Run the following command on windows CMD
+## 4. Run the following command on windows CMD
    
    ```shell
    ./mvnw compile quarkus:dev
@@ -75,10 +78,30 @@
    
    More info here: Using Quarkus with Maven https://quarkus.io/guides/maven-tooling
    
-7. Test project with Postman:
+## 5. Test project with Postman:
    | Test Case 1 | Test Case 2 | Test Case 3 |
    | - | - | - |
    | ![image](https://github.com/user-attachments/assets/af627e57-112b-4632-a392-47f4c5f90071) | ![image](https://github.com/user-attachments/assets/5cae12af-397b-4011-b32b-9a88c262705d) | ![image](https://github.com/user-attachments/assets/8d90d76f-adf2-47ab-bbd2-deb6687db069) |
+
+## 6. Validate Prometheus is functional
+   ### 6.1. You may download and install it from: https://prometheus.io/download/
+   ### 6.2. Modify prometheus.yml pointing it into the endpoint we created (localhost:8080/q/metrics):
+   
+   ```shell
+   scrape_configs:
+     - job_name: "prometheus"
+       metrics_path: '/q/metrics'
+       static_configs:
+         - targets: ["localhost:8080"]
+   ```
+
+   ### 6.3. Run prometheus.exe (Windows) and validate api metrics are present. 
+   
+   ![image](https://github.com/user-attachments/assets/8048c19e-cbd3-4373-805f-7289af016572)
+   
+   <img width="637" alt="image" src="https://github.com/user-attachments/assets/2bdc8552-4a94-4967-9475-d57ba662fc36">
+
+   
 
 
    
