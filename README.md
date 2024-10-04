@@ -120,7 +120,7 @@ If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifact
    
    https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
    
-   ### 8.3. Download Virtualbox (optional) or use Hyper-V
+   ### 8.3. Download Virtualbox or use Hyper-V
    
    https://www.virtualbox.org/
    
@@ -129,6 +129,19 @@ If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifact
    ```shell
    minikube start
    ```
+
+   In case of error, run:
+   ```shell
+   minikube delete
+   minikube start
+   ```
+
+   Verify status with:
+   ```shell
+   minikube status
+   ```
+   ![image](https://github.com/user-attachments/assets/fed7465a-3635-4fa9-a39f-9f4658406494)
+
 
 
 
