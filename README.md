@@ -111,6 +111,24 @@ If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifact
 
    ![image](https://github.com/user-attachments/assets/5147a119-3bd2-4da4-9127-2eab1084278b)
 
+## 8. (optional) Scale it up with Kubernetes
+   ### 8.1. Download kubectl 
+   
+   https://kubernetes.io/releases/download/#binaries
+   
+   ### 8.2. Download minikube
+   
+   https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+   
+   ### 8.3. Download Virtualbox (optional) or use Hyper-V
+   
+   https://www.virtualbox.org/
+   
+   ### 8.4. Start minikube
+
+   ```shell
+   minikube start
+   ```
 
 
 
