@@ -142,7 +142,11 @@ If using Powershell, wrap -D parameters in double quotes e.g. "-DprojectArtifact
    ```
    ![image](https://github.com/user-attachments/assets/fed7465a-3635-4fa9-a39f-9f4658406494)
 
+   ### 8.5. (optional) Install VSCode extensions 
 
+   ![image](https://github.com/user-attachments/assets/47cba049-1dd8-4441-9bbc-bd80d62f677c)
+
+   ![image](https://github.com/user-attachments/assets/f0a630c9-33d0-47d9-ac6c-f3457dae5489)
 
 
    
